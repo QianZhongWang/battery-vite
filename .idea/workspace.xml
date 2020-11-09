@@ -1,7 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="10279f85-3407-4838-8062-e81811c6eeab" name="Default Changelist" comment="" />
+    <list default="true" id="10279f85-3407-4838-8062-e81811c6eeab" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/router/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/exception/403.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/exception/404.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/exception/500.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/exception/ExceptionPage.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/exception/type.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/utils/storage.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/utils/storage.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/axios/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/axios/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue.config.js" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,13 +32,19 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript File" />
+        <option value="Vue Single File Component" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1jrjYvndDbUkCKTYrxwbl4Jnab9" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/views" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="D:\run\WebStorm 2019.2.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
@@ -27,6 +53,7 @@
       <recent name="D:\project\battery\src\assets\css" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\project\battery\src\views" />
       <recent name="D:\project\battery" />
       <recent name="D:\project\battery\src\interface" />
       <recent name="D:\project\battery\src" />
@@ -68,11 +95,22 @@
       <updated>1604569155643</updated>
       <workItem from="1604569158100" duration="17841000" />
       <workItem from="1604650300176" duration="281000" />
-      <workItem from="1604653148931" duration="4712000" />
+      <workItem from="1604653148931" duration="21085000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

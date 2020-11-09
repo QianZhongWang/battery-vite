@@ -1,5 +1,5 @@
-import Storage from 'vue-ls';
-import {App} from "@vue/runtime-core";
+// import Storage from 'vue-ls';
+// import {App} from "@vue/runtime-core";
 
 /**
     Vue.ls.set('foo', 'boo');
@@ -24,5 +24,13 @@ const options = {
     name: 'ls', // 命名Vue变量.[ls]或this.[$ls],
     storage: 'local', // 存储名称: session, local, memory
 };
-
+const Storage = {
+    get() {},
+    set() {},
+    on() {},
+    off() {},
+    remove() {},
+    clear() {},
+}
 export default Storage
+

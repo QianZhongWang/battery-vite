@@ -1,7 +1,8 @@
-
 import { App } from 'vue';
-import util from '@/assets/utils/util';
-import storage from '@/assets/utils/storage';
+// import util from '../assets/utils/util';
+// import storage from '../assets/utils/storage';
+// console.log(util)
+// console.log(storage)
 
 declare interface Utils {
     addN(n: number): number;
@@ -17,8 +18,11 @@ declare module '@vue/runtime-core' {
 export default {
     install(app: App) {
         app.config.globalProperties.$util = {
-            ...util,
-            ...storage,
+            // util,
+            // storage,
+            addN(a: number) {
+                return a + 1
+            }
         }
     }
 }
