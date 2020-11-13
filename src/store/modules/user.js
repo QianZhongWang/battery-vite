@@ -1,15 +1,15 @@
 import Vue from 'vue'
-import { login, logout } from '@/api/login'
+import { login, logout } from '../../api/login'
 import {
   ACCESS_TOKEN,
   USER_NAME,
   USER_INFO,
   USER_AUTH,
   SYS_BUTTON_AUTH
-} from '@/store/mutation-types'
-import { welcome } from '@/utils/util'
-import { queryPermissionsByUser } from '@/api/api'
-import { getAction } from '@/api/manage'
+} from '../mutation-types'
+import { welcome } from '../../util/index'
+import { queryPermissionsByUser } from '../../api/api'
+import { getAction } from '../../axios/index'
 
 const user = {
   state: {

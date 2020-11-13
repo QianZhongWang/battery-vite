@@ -1,13 +1,23 @@
 const CompressionPlugin = require('compression-webpack-plugin');
 
+const path = require('path');
+const resolve = (dir) => path.join(__dirname, dir);
+
 module.exports = {
+  //基本路径
+  publicPath: './',
+
   chainWebpack: (config) => {
-    config.resolve.alias.set('@/api', resolve('src/api'))
-      .set('@/assets', resolve('src/assets'))
-      .set('@/comp', resolve('src/components'))
-      .set('@/util', resolve('src/util'))
-      .set('@/img', resolve('src/assets/images'))
-      .set('@/inter', resolve('src/interface'));
+    config.resolve.symlinks(true); // 修复热更新失效
+
+    config.resolve.alias
+      .set('@comp', resolve('src/components'))
+      .set('@img', resolve('src/assets/images'))
+      .set('@inter', resolve('src/interface'))
+      .set('@api', resolve('src/api'))
+      .set('@assets', resolve('src/assets'))
+      .set('@util', resolve('/src/util'));
+
     // 生产环境，开启js\css压缩
     if (process.env.NODE_ENV === 'production') {
       config.plugin('compressionPlugin').use(
@@ -33,7 +43,22 @@ module.exports = {
         javascriptEnabled: true
       }
     }
-  }
+  },
+  devServer: {
+    port: 3000,
+    proxy: {
+      // target: 'https://baidu.com/',
+      // changeOrigin: true,
+      // pathRewrite: {
+      //   '^/api': '/'
+      // }
+      target: 'http://localhost:3000',
+      changeOrigin: true,
+      pathRewrite: {
+        [process.env.VUE_APP_BASE_API]: process.env.VUE_APP_GATEWAY_BASE
+      }
+    }
+  },
 
 }
 
